@@ -1,0 +1,36 @@
+name: k
+description: "A new Flutter project."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.5+1 # state management library
+  isar: ^3.1.0 # main library that provides ISAR API for defining schema, CRUD & executing queries.
+  isar_flutter_libs: ^3.1.0 # we use this dependency so that we can use ISAR database accross
+  # different platforms such as android, ios, desktop
+  image_picker: ^1.2.1 # for choosing images from device
+  flutter_rating_bar: ^4.0.1 #for rating bar
+  path_provider: ^2.1.5
+  search_app_bar_page: ^3.0.0 #this is used to create search page
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  isar_generator: 3.1.0
+  build_runner: any
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
