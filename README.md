@@ -10,7 +10,7 @@
 
 2. **Architecture**
 
-- Download / view diagram: [https://mega.nz/file/hgAEFZQB#PfyPX9gIJ5QyfUuu0UT-eHm-kKLG0NsNqoXPfrxQ_9Q](https://mega.nz/file/hgAEFZQB#PfyPX9gIJ5QyfUuu0UT-eHm-kKLG0NsNqoXPfrxQ_9Q)
+- HD Version: [https://mega.nz/file/hgAEFZQB#PfyPX9gIJ5QyfUuu0UT-eHm-kKLG0NsNqoXPfrxQ_9Q](https://mega.nz/file/hgAEFZQB#PfyPX9gIJ5QyfUuu0UT-eHm-kKLG0NsNqoXPfrxQ_9Q)
 
-- Architecture:
-  ![Kitchen Memory Architecture](./kitchen_memories/images/Kitchen%20Memory%20Architecture.excalidraw.png)
+- Architecture Image:
+  ![Kitchen Memory Architecture](./kitchen_memory/images/Kitchen%20Memory%20Architecture.excalidraw.png)
