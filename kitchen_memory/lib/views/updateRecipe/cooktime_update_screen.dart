@@ -110,7 +110,7 @@ class _CookTimeUpdateScreenState extends State<CookTimeUpdateScreen> {
 
               const SizedBox(height: 10),
 
-              NextButton(label: 'Update', onPressed: _updateCookTime),
+              ReusableButton(label: 'Update', onPressed: _updateCookTime),
               const SizedBox(height: 10),
             ],
           ),

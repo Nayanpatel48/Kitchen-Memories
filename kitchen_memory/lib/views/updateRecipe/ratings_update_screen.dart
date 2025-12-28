@@ -101,7 +101,7 @@ class _RatingsUpdateScreenState extends State<RatingsUpdateScreen> {
 
             const SizedBox(height: 10),
 
-            NextButton(label: 'Update Rating', onPressed: _updateRating),
+            ReusableButton(label: 'Update Rating', onPressed: _updateRating),
           ],
         ),
       ),

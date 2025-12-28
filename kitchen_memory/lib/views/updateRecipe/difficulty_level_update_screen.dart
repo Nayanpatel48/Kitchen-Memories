@@ -107,7 +107,7 @@ class _DifficultyLevelUpdateScreenState
 
             const SizedBox(height: 10),
 
-            NextButton(label: 'Update', onPressed: _updateDifficultyLevel),
+            ReusableButton(label: 'Update', onPressed: _updateDifficultyLevel),
           ],
         ),
       ),

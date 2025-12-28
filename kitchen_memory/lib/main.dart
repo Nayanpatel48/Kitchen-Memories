@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:kitchen_memory/Provider/recipe_form_provider.dart';
 import 'package:kitchen_memory/Provider/recipe_provider.dart';
+import 'package:kitchen_memory/core/theme/app_theme.dart';
+import 'package:kitchen_memory/core/theme/theme_notifier.dart';
 import 'package:kitchen_memory/models/recipe_model.dart';
 import 'package:kitchen_memory/views/main_page.dart';
 import 'package:provider/provider.dart';
@@ -21,6 +23,7 @@ void main() async {
       providers: [
         ChangeNotifierProvider(create: (_) => RecipeProvider()),
         ChangeNotifierProvider(create: (_) => RecipeFormProvider()),
+        ChangeNotifierProvider(create: (_) => ThemeNotifier()),
       ],
       child: const MyApp(),
     ),
@@ -32,7 +35,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final themeProvider = context.watch<ThemeNotifier>();
+
     return MaterialApp(
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: themeProvider.getMaterialThemeMode(),
       home: const MainPage(),
       debugShowCheckedModeBanner: false,
     );

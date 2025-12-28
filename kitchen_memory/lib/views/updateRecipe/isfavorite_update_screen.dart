@@ -94,7 +94,7 @@ class _IsFavoriteUpdateScreenState extends State<IsFavoriteUpdateScreen> {
 
             const SizedBox(height: 10),
 
-            NextButton(label: 'Update', onPressed: _updateIsFavorite),
+            ReusableButton(label: 'Update', onPressed: _updateIsFavorite),
           ],
         ),
       ),

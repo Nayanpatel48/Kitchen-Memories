@@ -119,7 +119,7 @@ class _NoteUpdateScreenState extends State<NoteUpdateScreen> {
 
               const SizedBox(height: 10),
 
-              NextButton(label: 'Update', onPressed: _updateNote),
+              ReusableButton(label: 'Update', onPressed: _updateNote),
             ],
           ),
         ),

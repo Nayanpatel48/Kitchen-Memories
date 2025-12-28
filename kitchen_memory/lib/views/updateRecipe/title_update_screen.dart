@@ -90,7 +90,7 @@ class _TitleUpdateScreenState extends State<TitleUpdateScreen> {
 
               const SizedBox(height: 10),
 
-              NextButton(label: 'Update', onPressed: _updateTitle),
+              ReusableButton(label: 'Update', onPressed: _updateTitle),
             ],
           ),
         ),

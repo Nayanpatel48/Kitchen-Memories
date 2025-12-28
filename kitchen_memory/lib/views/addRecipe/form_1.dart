@@ -97,7 +97,7 @@ class _Form1State extends State<Form1> {
 
               const SizedBox(height: 10),
 
-              NextButton(label: 'Save', onPressed: _saveForm1Data),
+              ReusableButton(label: 'Save', onPressed: _saveForm1Data),
 
               Card(
                 color: Colors.deepPurple.shade50,

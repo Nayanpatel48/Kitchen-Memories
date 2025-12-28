@@ -89,7 +89,7 @@ class _DescriptionUpdateScreenState extends State<DescriptionUpdateScreen> {
 
               const SizedBox(height: 10),
 
-              NextButton(label: 'Update', onPressed: _updateDescription),
+              ReusableButton(label: 'Update', onPressed: _updateDescription),
             ],
           ),
         ),

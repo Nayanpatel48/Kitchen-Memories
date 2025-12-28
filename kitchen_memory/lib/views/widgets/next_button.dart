@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 
-class NextButton extends StatelessWidget {
+class ReusableButton extends StatelessWidget {
   final String label;
   final VoidCallback onPressed;
 
-  const NextButton({super.key, required this.label, required this.onPressed});
+  const ReusableButton({
+    super.key,
+    required this.label,
+    required this.onPressed,
+  });
 
   @override
   Widget build(BuildContext context) {

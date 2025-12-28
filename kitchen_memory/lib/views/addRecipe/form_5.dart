@@ -167,7 +167,7 @@ class _Form5State extends State<Form5> {
 
             const SizedBox(height: 10),
 
-            NextButton(label: 'Save Image', onPressed: _saveImage),
+            ReusableButton(label: 'Save Image', onPressed: _saveImage),
           ],
         ),
       ),

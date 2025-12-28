@@ -10,24 +10,18 @@ class RecipeCrudViewmodel {
 
   static const String _boxName = 'recipe_db';
 
-  // --- Single access point for the Box
   Future<Box<RecipeModel>> get recipeBox async {
     if (_recipeBox == null || !_recipeBox!.isOpen) {
-      // 1. Initialize Hive if not already done (usually done in main.dart)
-      // but safe to check here as well.
       if (!kIsWeb && !Hive.isAdapterRegistered(0)) {}
 
-      // 2. Open the box
       _recipeBox = await Hive.openBox<RecipeModel>(_boxName);
     }
     return _recipeBox!;
   }
 
-  // CREATE
   Future<void> addRecipe(RecipeModel recipe) async {
     try {
       final box = await recipeBox;
-      // .add() automatically assigns an auto-incrementing integer key
       await box.add(recipe);
       debugPrint('Recipe added successfully');
     } catch (e) {
@@ -51,6 +45,7 @@ class RecipeCrudViewmodel {
   Future<void> deleteRecipe(int key) async {
     try {
       final box = await recipeBox;
+
       // Hive uses "keys" to delete. If you used .add(), the key is the index.
       await box.delete(key);
       debugPrint('Recipe deleted at key: $key');

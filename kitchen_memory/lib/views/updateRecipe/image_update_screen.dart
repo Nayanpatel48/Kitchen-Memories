@@ -139,7 +139,7 @@ class _ImageUpdateScreenState extends State<ImageUpdateScreen> {
 
             const SizedBox(height: 10),
 
-            NextButton(label: 'Update Image', onPressed: _updateImage),
+            ReusableButton(label: 'Update Image', onPressed: _updateImage),
           ],
         ),
       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kitchen_memory/views/home_page.dart';
 import 'package:kitchen_memory/views/search_page.dart';
+import 'package:kitchen_memory/views/settings_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -12,7 +13,11 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int currentPageIndex = 0;
 
-  final List<Widget> _pages = [const HomePage(), const SearchPage()];
+  final List<Widget> _pages = [
+    const HomePage(),
+    const SearchPage(),
+    const SettingsPage(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -45,6 +50,12 @@ class _MainPageState extends State<MainPage> {
           children: [
             _customNavItem(0, Icons.home_rounded, "Home", Colors.blue),
             _customNavItem(1, Icons.search_rounded, "Search", Colors.orange),
+            _customNavItem(
+              2,
+              Icons.settings_rounded,
+              "Settings",
+              Colors.pinkAccent,
+            ),
           ],
         ),
       ),

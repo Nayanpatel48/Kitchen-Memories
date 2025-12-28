@@ -98,7 +98,7 @@ class _DetailsPageState extends State<DetailsPage> {
                   _buildSectionTitle("Instructions"),
                   ..._buildStepsList(),
                   const SizedBox(height: 30),
-                  NextButton(
+                  ReusableButton(
                     label: 'Update Recipe!',
                     onPressed: _navigateToUpdateRecipeScreen,
                   ),

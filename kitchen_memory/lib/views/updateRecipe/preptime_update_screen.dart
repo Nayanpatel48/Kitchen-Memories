@@ -111,7 +111,7 @@ class _PrepTimeUpdateScreenState extends State<PrepTimeUpdateScreen> {
 
               const SizedBox(height: 10),
 
-              NextButton(label: 'Update', onPressed: _updatePrepTime),
+              ReusableButton(label: 'Update', onPressed: _updatePrepTime),
               const SizedBox(height: 10),
             ],
           ),

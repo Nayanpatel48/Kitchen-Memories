@@ -188,7 +188,7 @@ class _IngredientUpdateScreenState extends State<IngredientUpdateScreen> {
                   },
                 ),
               ),
-              NextButton(label: 'Update', onPressed: _updateIngredients),
+              ReusableButton(label: 'Update', onPressed: _updateIngredients),
             ],
           ),
         ),

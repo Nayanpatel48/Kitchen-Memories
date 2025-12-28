@@ -183,7 +183,7 @@ class _StepsUpdateScreenState extends State<StepsUpdateScreen> {
                   },
                 ),
               ),
-              NextButton(label: 'Update', onPressed: _updateStep),
+              ReusableButton(label: 'Update', onPressed: _updateStep),
             ],
           ),
         ),

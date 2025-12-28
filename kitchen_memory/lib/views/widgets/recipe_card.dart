@@ -27,7 +27,7 @@ class RecipeCard extends StatelessWidget {
           ), // Slightly smaller radius for grid density
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.08),
+              color: Colors.black.withOpacity(0.2),
               blurRadius: 15,
               offset: const Offset(0, 8),
             ),

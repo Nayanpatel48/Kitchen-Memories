@@ -153,7 +153,7 @@ class _Form4State extends State<Form4> {
 
               const SizedBox(height: 10),
 
-              NextButton(label: 'Save', onPressed: _saveTimes),
+              ReusableButton(label: 'Save', onPressed: _saveTimes),
               const SizedBox(height: 10),
 
               Card(

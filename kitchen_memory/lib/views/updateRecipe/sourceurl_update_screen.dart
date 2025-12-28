@@ -119,7 +119,7 @@ class _SourceUrlUpdateScreenState extends State<SourceUrlUpdateScreen> {
 
               const SizedBox(height: 10),
 
-              NextButton(label: 'Update', onPressed: _updateSourceUrl),
+              ReusableButton(label: 'Update', onPressed: _updateSourceUrl),
             ],
           ),
         ),
